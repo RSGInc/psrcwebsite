@@ -23,21 +23,21 @@ var app_routing_module_1 = require("./app-routing.module");
 var AppModule = (function () {
     function AppModule() {
     }
+    AppModule = __decorate([
+        core_1.NgModule({
+            imports: [
+                platform_browser_1.BrowserModule,
+                forms_1.FormsModule,
+                app_routing_module_1.AppRoutingModule
+            ],
+            declarations: [app_component_1.AppComponent, navbar_component_1.NavBarComponent, home_component_1.HomeComponent, region_component_1.RegionComponent,
+                sponsors_component_1.SponsorsComponent, contact_component_1.ContactComponent, news_component_1.NewsComponent, about_component_1.AboutComponent, privacy_component_1.PrivacyComponent, footer_component_1.FooterComponent
+            ],
+            bootstrap: [app_component_1.AppComponent]
+        })
+    ], AppModule);
     return AppModule;
 }());
-AppModule = __decorate([
-    core_1.NgModule({
-        imports: [
-            platform_browser_1.BrowserModule,
-            forms_1.FormsModule,
-            app_routing_module_1.AppRoutingModule
-        ],
-        declarations: [app_component_1.AppComponent, navbar_component_1.NavBarComponent, home_component_1.HomeComponent, region_component_1.RegionComponent,
-            sponsors_component_1.SponsorsComponent, contact_component_1.ContactComponent, news_component_1.NewsComponent, about_component_1.AboutComponent, privacy_component_1.PrivacyComponent, footer_component_1.FooterComponent
-        ],
-        bootstrap: [app_component_1.AppComponent]
-    })
-], AppModule);
 exports.AppModule = AppModule;
 /*
 Copyright 2017 Google Inc. All Rights Reserved.

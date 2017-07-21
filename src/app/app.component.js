@@ -14,15 +14,15 @@ var AppComponent = (function () {
     function AppComponent() {
         this.projectName = 'Puget Sound Regional Travel Study';
     }
+    AppComponent = __decorate([
+        core_1.Component({
+            selector: 'my-app',
+            template: "\n    <navbar></navbar>\n <router-outlet></router-outlet>\n <footer></footer>\n",
+        }),
+        __metadata("design:paramtypes", [])
+    ], AppComponent);
     return AppComponent;
 }());
-AppComponent = __decorate([
-    core_1.Component({
-        selector: 'my-app',
-        template: "\n    <navbar></navbar>\n <router-outlet></router-outlet>\n <footer></footer>\n",
-    }),
-    __metadata("design:paramtypes", [])
-], AppComponent);
 exports.AppComponent = AppComponent;
 /*
 Copyright 2017 Google Inc. All Rights Reserved.
