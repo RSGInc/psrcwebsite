@@ -1,0 +1,70 @@
+<div class="row">
+  <div class='col-md-12 text-center'>
+    <p>
+      Data collection for the 2017 Puget Sound Regional Travel Study has been completed. </p>
+    <p>
+      For more information about the Puget Sound Regional Council's Household Travel Survey Program,<br/> please visit:
+      <a href='https://www.psrc.org/household-travel-survey-program' target='_blank'>https://www.psrc.org/household-travel-survey-program</a>.
+    </p>
+  </div>
+</div>
+
+<!--slideshow did you knowdiv -->
+<div class="text-center">
+  <h4>Did you know?</h4>
+</div>
+<div id="facts" class="carousel slide hidden-phone" data-ride="carousel" data-pause="false" data-interval="15000">
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner hidden-phone centered">
+    <div *ngFor="let fact of facts; let first = first; let last = last; let i = index" [ngClass]="first? 'active item text-center' : ' item text-center' ">
+      <p>{{fact.text}} </p>
+    </div>
+  </div>
+</div>
+
+<div id="carousel-1" class="jumbotron carousel slide hidden-phone" data-ride="carousel" data-pause="false" data-interval="15000">
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner hidden-phone">
+    <div *ngFor="let slide of slides; let first = first; let i = index" [ngClass]="first? 'item active' : 'item' ">
+      <img src="{{slide.path}}" alt="{{slide.text}}" class="img-rounded">
+    </div>
+  </div>
+</div>
+
+<div id="carousel-quote" class="jumbotron carousel slide hidden-phone" data-ride="carousel" data-pause="false" data-interval="15000">
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner hidden-phone">
+    <div *ngFor="let quote of quotes; let first = first; " [ngClass]="first? 'item active' : 'item' ">
+      <blockquote class="blockquote-reverse">
+        <p>{{quote.text}}</p>
+        <cite title="Source Title">{{quote.author}}</cite>
+      </blockquote>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+
+  <!-- ABOUT BUTTONS
+			================================================== -->
+
+  <div class="row">
+    <div class="row thumbnails">
+      <div class="col-lg-6" style="text-align:center">
+        <a href="/about"><img data-src="holder.js/180x180" class="img-rounded" alt="study overview" style="width: 180px; height: 180px;" src="./app/theme/overview-mini.png"/></a>
+        <h3>About the Project</h3>
+      </div>
+      <div class="col-lg-6" style="text-align:center">
+        <a href="/region"><img data-src="holder.js/180x180" class="img-rounded" alt="about the region" style="width: 180px; height: 180px;" src="./app/theme/map-mini.png"/></a>
+        <h3>About the Study Region</h3>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<about></about>
+<region></region>
+<news></news>
+<!-- /.container -->

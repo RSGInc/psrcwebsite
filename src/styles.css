@@ -1,0 +1,208 @@
+/*Color Palette*/
+/*.orange{color:#f78d35;}*/
+.orange{color:#FF7F00;}
+.blue{color:#3c9fDB}
+.dk_grey{color:#5a5a5c}
+.md_grey{color:#706f73;}
+
+body{font-family: 'Open Sans', sans-serif;font-weight:normal;color:#5a5a5c;font-size:1.5rem;}
+
+h1, h2, h3, h4, h5, h6 {font-family: 'Open Sans',sans-serif;font-weight:600;}
+
+.blockquote-reverse p {
+	font-size: 14px;
+}
+
+.blockquote-reverse cite {
+	font-size: 12px;
+}
+
+#banner {
+  height: 350px;
+  width: 100%;
+  background: white url("banner4.jpg") no-repeat;
+  background-size: 100% 100%;
+}
+
+.content-wrapper {
+	padding-top: 25px;
+	padding-left: 10px;
+	background-color: white;
+}
+
+.jumbotron-first {
+	margin-bottom:0px;
+	background-color: white;
+	color: black;
+	padding-top: 0px;
+	padding-bottom: 10px;
+	/*placeholder space*/
+	height:400px;
+	width:1000px;
+}
+
+.jumbotron-heading {background-color: white;color: #5a5a5c;/*margin-top:50px;*/} /*got rid of orange*/
+
+.jumbotron h1 {font-size:4rem;font-weight:400;}
+
+.jumbotron-first h1 {font-size:5rem;}
+
+.jumbotron { padding-bottom: 0px !Important; }
+
+.social img {padding: 2px;}
+
+/*faqs page*/
+.faq h3 {
+	margin-top: 40px;
+	margin-bottom: 10px;
+	font-size:2.2rem;
+	font-weight:300;
+}
+
+.btn-default:hover {
+	color: #FF7F00;
+	background-color: white;
+	border-color: #FF7F00;
+}
+
+.btn-default {
+	color: white;
+	background-color: #FF7F00;
+	border-color: #FF7F00;
+}
+
+.btn-xl {
+	padding: 15px 22px;
+	font-size: 24px;
+	line-height: 1.33;
+	border-radius: 6px
+}
+
+.glyphicon {
+margin-top: 20px;
+margin-bottom: 30px;
+margin-left: 20px;
+font-size: 24px;
+}
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+.navbar {margin-bottom:0px;background-color:white;}
+
+.navbar-nav>li>a {background-color:white;}
+
+.navbar .navbar-toggle {border-color: #5a5a5c;}
+
+.navbar .navbar-toggle .icon-bar {background-color: #5a5a5c;}
+
+.navbar-nav a {
+	font-family: 'Open Sans', sans-serif;
+	font-weight:400;
+	text-transform:uppercase;
+	color:#5a5a5c;
+	font-size:1.7rem;
+}
+
+.navbar-brand {height:auto;}
+
+
+/* CUSTOMIZE THE THUMBNAILS
+-------------------------------------------------- */
+.thumbnails .col-lg-4 {
+  text-align: center;
+  margin-bottom: 20px;
+	margin-top: 20px;
+}
+.thumbnails h2 {
+  font-weight: normal;
+}
+.thumbnails .col-lg-4 p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* CUSTOMIZE THE FOOTER
+-------------------------------------------------- */
+
+footer {
+	background-color:#DBDBDB;
+	margin-top: 20px;
+	padding-top: 20px;
+}
+
+footer .nav-stacked>li {
+	font-family: 'Open Sans', sans-serif;
+	font-weight:600;
+	text-transform:uppercase;
+	font-size:1.3rem;
+}
+
+footer .nav-stacked>li a{color:#5a5a5c;}
+
+footer .copyright {font-size: 1rem;font-weight:400;padding-left:15px;}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+	.navbar-nav a {margin-top:35px;}
+
+	/* Make header bigger to fit project logo */
+	.header-wrapper {height: auto;}
+
+	.jumbotron-first h1 {font-size:7rem;}
+
+	/*.jumbotron-sub-home {margin-top: 100px;margin-bottom: 30px;}*/
+
+	/* Remove the edge padding needed for mobile, add bottom whitespace */
+  .thumbnails {
+		/*margin-bottom: 100px;*/
+		margin-top: 30px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+	/* Float footer navs left */
+	footer .nav-stacked>li {float: left;}
+
+	/* Make the footer a little bigger */
+	footer {
+		margin-top: 100px;
+		padding-bottom: 300px;
+	}
+
+}
+
+/* START PAGE
+-------------------------------------------------- */
+
+#login {
+	color: white;
+	top:410px;
+	left:600px;
+	position:absolute;
+}
+
+/*CAROUSEL*/
+#carousel-1 img {
+	width:100%;
+}
+.carousel-inner	{
+	margin:0 auto;
+	width:68%;
+}
+#carousel-1 {
+	padding:12px 0;
+	margin-bottom:0;
+}
+
+blockquote.blockquote-reverse {
+	height: 130px;
+}
+
+.project-text {
+	font-size: 1.5em;
+}

@@ -1,0 +1,36 @@
+<div class="jumbotron jumbotron-heading jumbotron-sub-home"><a name="press"></a>
+			<div class="container">
+				<h1>News</h1>
+				<hr/>
+			</div><!-- /.container -->
+		</div><!-- /.jumbotron -->
+
+		<div class="container">
+			<div class="row">
+
+				<div *ngFor="let newsObj of newsObjs; let first = first; let last = last; let i = index" class="media">
+					<a class="pull-left" href="#">
+						<img class="media-object" data-src="holder.js/100x100" style="width: 100px;" src="./app/theme/logos/{{newsObj.logo}}" alt="">
+					</a>
+					<div class="media-body">
+						<h4 class="media-heading">{{newsObj.heading}}</h4>
+						{{newsObj.text}}
+						<br/>
+						<a href="{{newsObj.link}}" target="_blank">Read more...</a>
+					</div>
+				</div>
+
+				<div class="media">
+					<div class="media-body">
+						<h4 class="media-heading">Media inquiries?</h4>
+						<a href="/contact" target="_blank">Contact Us</a>
+					</div>
+				</div>
+
+				<div class="col-sm-12">
+					<a href="#top"><span class="glyphicon glyphicon-circle-arrow-up"></span>&nbsp;&nbsp;Back to the Top</a>
+				</div>
+
+			</div><!-- /.row -->
+
+		</div><!-- /.container -->
