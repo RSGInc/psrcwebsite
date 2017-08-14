@@ -27,13 +27,13 @@ var ContactComponent = (function () {
             },
         ];
     }
-    ContactComponent = __decorate([
-        core_1.Component({
-            selector: 'contact',
-            templateUrl: './contact.component.html',
-        })
-    ], ContactComponent);
     return ContactComponent;
 }());
+ContactComponent = __decorate([
+    core_1.Component({
+        selector: 'contact',
+        templateUrl: './contact.component.html',
+    })
+], ContactComponent);
 exports.ContactComponent = ContactComponent;
 //# sourceMappingURL=contact.component.js.map

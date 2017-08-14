@@ -10,13 +10,13 @@ var core_1 = require("@angular/core");
 var NavBarComponent = (function () {
     function NavBarComponent() {
     }
-    NavBarComponent = __decorate([
-        core_1.Component({
-            selector: 'navbar',
-            templateUrl: './navbar.component.html',
-        })
-    ], NavBarComponent);
     return NavBarComponent;
 }());
+NavBarComponent = __decorate([
+    core_1.Component({
+        selector: 'navbar',
+        templateUrl: './navbar.component.html',
+    })
+], NavBarComponent);
 exports.NavBarComponent = NavBarComponent;
 //# sourceMappingURL=navbar.component.js.map

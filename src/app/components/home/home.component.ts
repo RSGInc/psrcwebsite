@@ -9,9 +9,9 @@ import * as $ from 'jquery';
 
 export class HomeComponent {
   ngAfterViewInit() {
-    let jq: any = $;
+    let w: any = window;
+    let jq: any = w.$;
     jq('.carousel').carousel();
-
   }
 
   facts = [
@@ -22,15 +22,15 @@ export class HomeComponent {
 
   ];
   slides = [
-    { path: './app/theme/slides/slide1.jpg', text: 'Slide 1' },
-    { path: './app/theme/slides/slide2.jpg', text: 'Slide 2' },
-    { path: './app/theme/slides/slide3.jpg', text: 'Slide 3' },
-    { path: './app/theme/slides/slide4.jpg', text: 'Slide 4' },
-    { path: './app/theme/slides/slide5.jpg', text: 'Slide 5' },
-    { path: './app/theme/slides/slide6.jpg', text: 'Slide 6' },
-    { path: './app/theme/slides/slide7.jpg', text: 'Slide 7' },
-    { path: './app/theme/slides/slide8.jpg', text: 'Slide 8' },
-    { path: './app/theme/slides/slide9.jpg', text: 'Slide 9' },
+    { path: './assets/slides/slide1.jpg', text: 'Slide 1' },
+    { path: './assets/slides/slide2.jpg', text: 'Slide 2' },
+    { path: './assets/slides/slide3.jpg', text: 'Slide 3' },
+    { path: './assets/slides/slide4.jpg', text: 'Slide 4' },
+    { path: './assets/slides/slide5.jpg', text: 'Slide 5' },
+    { path: './assets/slides/slide6.jpg', text: 'Slide 6' },
+    { path: './assets/slides/slide7.jpg', text: 'Slide 7' },
+    { path: './assets/slides/slide8.jpg', text: 'Slide 8' },
+    { path: './assets/slides/slide9.jpg', text: 'Slide 9' },
   ];
   quotes = [
     {

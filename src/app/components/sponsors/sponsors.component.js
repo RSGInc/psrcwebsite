@@ -36,13 +36,13 @@ var SponsorsComponent = (function () {
     function SponsorsComponent() {
         this.Provider = dictionary;
     }
-    SponsorsComponent = __decorate([
-        core_1.Component({
-            selector: 'sponsors',
-            templateUrl: './sponsors.component.html'
-        })
-    ], SponsorsComponent);
     return SponsorsComponent;
 }());
+SponsorsComponent = __decorate([
+    core_1.Component({
+        selector: 'sponsors',
+        templateUrl: './sponsors.component.html'
+    })
+], SponsorsComponent);
 exports.SponsorsComponent = SponsorsComponent;
 //# sourceMappingURL=sponsors.component.js.map

@@ -54,13 +54,13 @@ var NewsComponent = (function () {
             },
         ];
     }
-    NewsComponent = __decorate([
-        core_1.Component({
-            selector: 'news',
-            templateUrl: './news.component.html',
-        })
-    ], NewsComponent);
     return NewsComponent;
 }());
+NewsComponent = __decorate([
+    core_1.Component({
+        selector: 'news',
+        templateUrl: './news.component.html',
+    })
+], NewsComponent);
 exports.NewsComponent = NewsComponent;
 //# sourceMappingURL=news.component.js.map

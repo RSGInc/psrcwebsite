@@ -1,7 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+
 /*Color Palette*/
 /*.orange{color:#f78d35;}*/
 .orange{color:#FF7F00;}
-.blue{color:#3c9fDB}
+.blue{color:#3c9fDB;}
 .dk_grey{color:#5a5a5c}
 .md_grey{color:#706f73;}
 
@@ -20,7 +22,6 @@ h1, h2, h3, h4, h5, h6 {font-family: 'Open Sans',sans-serif;font-weight:600;}
 #banner {
   height: 350px;
   width: 100%;
-  background: white url("banner4.jpg") no-repeat;
   background-size: 100% 100%;
 }
 
@@ -47,7 +48,7 @@ h1, h2, h3, h4, h5, h6 {font-family: 'Open Sans',sans-serif;font-weight:600;}
 
 .jumbotron-first h1 {font-size:5rem;}
 
-.jumbotron { padding-bottom: 0px !Important; }
+.jumbotron { padding-bottom: 0px; }
 
 .social img {padding: 2px;}
 

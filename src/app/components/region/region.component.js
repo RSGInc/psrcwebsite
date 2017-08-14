@@ -10,13 +10,13 @@ var core_1 = require("@angular/core");
 var RegionComponent = (function () {
     function RegionComponent() {
     }
-    RegionComponent = __decorate([
-        core_1.Component({
-            selector: 'region',
-            templateUrl: './region.component.html',
-        })
-    ], RegionComponent);
     return RegionComponent;
 }());
+RegionComponent = __decorate([
+    core_1.Component({
+        selector: 'region',
+        templateUrl: './region.component.html',
+    })
+], RegionComponent);
 exports.RegionComponent = RegionComponent;
 //# sourceMappingURL=region.component.js.map

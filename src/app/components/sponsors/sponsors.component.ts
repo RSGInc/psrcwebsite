@@ -32,7 +32,7 @@ website_contact_h1:"Contact Information"
 
 @Component({
   selector: 'sponsors',
-  templateUrl: './sponsors.component.html';
+  templateUrl: './sponsors.component.html',
 })
 export class SponsorsComponent  {
   Provider = dictionary;

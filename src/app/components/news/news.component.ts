@@ -17,7 +17,7 @@ export class NewsComponent {
       heading: "Puget Sound Regional Council conducting regional travel study",
       text: "The Puget Sound Regional Council (PSRC) is conducting a regional travel study to better understand the transportation needs and preferences of the region's residents. Between March 2017 and June 2017, Redmond residents will receive invitations to participate in this important transportation study led by PSRC.",
       link: "http://myedmondsnews.com/2017/03/puget-sound-regional-council-to-conduct-regional-travel-study/",
-      logo: "My-Edmonds-News-Logo.jpg",
+      logo: "news-logo.jpg",
     },
     {
       heading: "PSRC conducting household travel survey",

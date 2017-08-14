@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
+// import { CommonModule } from '@angular/common';
+// import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './components/navbar/navbar.component';
@@ -21,7 +21,6 @@ import { AppRoutingModule } from './app-routing.module';
     BrowserModule,
     FormsModule,
     AppRoutingModule
-
   ],
   declarations: [AppComponent, NavBarComponent, HomeComponent, RegionComponent,
     SponsorsComponent, ContactComponent, NewsComponent, AboutComponent, PrivacyComponent, FooterComponent

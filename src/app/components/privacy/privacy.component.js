@@ -45,13 +45,13 @@ var PrivacyComponent = (function () {
     function PrivacyComponent() {
         this.dictionary = dict;
     }
-    PrivacyComponent = __decorate([
-        core_1.Component({
-            selector: 'privacy',
-            templateUrl: './privacy.component.html',
-        })
-    ], PrivacyComponent);
     return PrivacyComponent;
 }());
+PrivacyComponent = __decorate([
+    core_1.Component({
+        selector: 'privacy',
+        templateUrl: './privacy.component.html',
+    })
+], PrivacyComponent);
 exports.PrivacyComponent = PrivacyComponent;
 //# sourceMappingURL=privacy.component.js.map
