@@ -1,70 +1,82 @@
-<div class="row">
-  <div class='col-md-12 text-center'>
-    <p>
-      Data collection for the 2017 Puget Sound Regional Travel Study has been completed. </p>
-    <p>
-      For more information about the Puget Sound Regional Council's Household Travel Survey Program,<br/> please visit:
-      <a href='https://www.psrc.org/household-travel-survey-program' target='_blank'>https://www.psrc.org/household-travel-survey-program</a>.
-    </p>
-  </div>
+
+<div>
+    <ul class="cb-slideshow">
+        <li><span>Image 01</span></li>
+        <li><span>Image 02</span></li>
+    </ul>
 </div>
 
-<!--slideshow did you knowdiv -->
-<div class="text-center">
-  <h4>Did you know?</h4>
-</div>
-<div id="facts" class="carousel slide hidden-phone" data-ride="carousel" data-pause="false" data-interval="15000">
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner hidden-phone centered">
-    <div *ngFor="let fact of facts; let first = first; let last = last; let i = index" [ngClass]="first? 'active item text-center' : ' item text-center' ">
-      <p>{{fact.text}} </p>
+<!-- top section -->
+<section id="section1">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-5 col-md-4 col-lg-3 col-lg-offset-1 text-center">
+                <img src="assets/map_complete_phone.png" id="phone_img"/>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-3" id="logo_panel">
+                <div>
+                    <img id="logo_img" src="assets/logo.png" />
+                    <h3 class="text-muted" id="tagline">Private and secure data collection of your travel habits to plan tomorrow's transportation needs.</h3>
+                    <a href="/privacy" class="hidden-xs"><h3 class="text-danger">+ read  our security promise</h3></a>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
+</section>
 
-<div id="carousel-1" class="jumbotron carousel slide hidden-phone" data-ride="carousel" data-pause="false" data-interval="15000">
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner hidden-phone">
-    <div *ngFor="let slide of slides; let first = first; let i = index" [ngClass]="first? 'item active' : 'item' ">
-      <img src="{{slide.path}}" alt="{{slide.text}}" class="img-rounded">
+<!-- middle section -->
+<section id="section2"class="charcoal">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="thumbnail charcoal" id="thumbnail1">
+                    <h4 class="text-warning">1. Download the app</h4>
+                    <p class="text-light">The app is available for most iOS and Android phones. If your phone is not compatible, we have other ways for you to participate.</p>
+                    <div class="storeIcons">
+                        <a id="storeIconLeft" target="_blank" href="https://itunes.apple.com/us/app/id939678290"><img src="assets/appStore.png" /></a>
+                        <a id="storeIconRight" target="_blank" href="https://play.google.com/store/apps/details?id=com.rsginc.rPlace"><img src="assets/googleStore.png"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="thumbnail charcoal" id="thumbnail2">
+                    <h4 class="text-warning">2. Just go about your life</h4>
+                    <p class="text-light"><strong>rPlace</strong> will track your travel and ask questions when you stop. Nothing to it!</p>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="thumbnail charcoal" id="thumbnail3">
+                    <h4 class="text-warning">3. Answer questions about your travel</h4>
+                    <p class="text-light">Your answers will help planning professionals design future transportation investments in your region.</p>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
+</section>
 
-<div id="carousel-quote" class="jumbotron carousel slide hidden-phone" data-ride="carousel" data-pause="false" data-interval="15000">
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner hidden-phone">
-    <div *ngFor="let quote of quotes; let first = first; " [ngClass]="first? 'item active' : 'item' ">
-      <blockquote class="blockquote-reverse">
-        <p>{{quote.text}}</p>
-        <cite title="Source Title">{{quote.author}}</cite>
-      </blockquote>
+<section id="section3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>What is rPlace?</h2>
+                <p>rPlace is an app designed to collect opinions on Vermont pavement conditions from invited participants. rPlace will monitor where you travel and will ask you to rate the pavement of specific roads you have just driven on.</p>
+                <p>What condition are specific roads in? Given limited funding, how quickly would you like to see certain roads repaired? How often do you use these roads? rPlace automates the process of collecting this information, alleviates burden, and improves the overall quality of information delivered to the Vermont Agency of Transportation (VTrans).</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Why should I participate?</h2>
+                <p>VTrans will use information collected from this study to ensure they focus on repaving the right roads in the appropriate order across Vermont. As a participant, your involvement helps shape the outcome of these future plans—and the allocation of funding—by providing feedback on the roads you drive on.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h2>How will my information be used?</h2>
+                <p>As noted, the information gathered by rPlace helps direct future transportation plans and funding. rPlace includes robust privacy protections to protect your anonymity and privacy. Your data and information will not be sold. For more information, <a href="/privacy">click here</a>.</p>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
-
-<div class="container">
-
-
-  <!-- ABOUT BUTTONS
-			================================================== -->
-
-  <div class="row">
-    <div class="row thumbnails">
-      <div class="col-lg-6" style="text-align:center">
-        <a href="/about"><img data-src="holder.js/180x180" class="img-rounded" alt="study overview" style="width: 180px; height: 180px;" src="./assets/overview-mini.png"/></a>
-        <h3>About the Project</h3>
-      </div>
-      <div class="col-lg-6" style="text-align:center">
-        <a href="/region"><img data-src="holder.js/180x180" class="img-rounded" alt="about the region" style="width: 180px; height: 180px;" src="./assets/map-mini.png"/></a>
-        <h3>About the Study Region</h3>
-      </div>
-    </div>
-  </div>
-
-</div>
-
-<about></about>
-<region></region>
-<news></news>
-<!-- /.container -->
+</section>

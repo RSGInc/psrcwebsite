@@ -9,23 +9,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var ContactComponent = (function () {
     function ContactComponent() {
-        this.contacts = [
-            {
-                name: "Media inquiries: Rick Olson,",
-                email: "rolson@psrc.org",
-                phone: "1-206-971-3050"
-            },
-            {
-                name: "Project inquiries: Brian Lee,",
-                email: "blee@psrc.org",
-                phone: "1-206-971-3270"
-            },
-            {
-                name: "Project inquiries: Neil Kilgren,",
-                email: "nkilgren@psrc.org",
-                phone: "1-206-971-3602"
-            },
-        ];
     }
     return ContactComponent;
 }());

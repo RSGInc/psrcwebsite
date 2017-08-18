@@ -1,36 +1,86 @@
-<div class="jumbotron jumbotron-heading jumbotron-sub-home"><a name="press"></a>
-			<div class="container">
-				<h1>News</h1>
-				<hr/>
-			</div><!-- /.container -->
-		</div><!-- /.jumbotron -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <br/>
+            <h2>FAQs</h2>
+            <br/>
 
-		<div class="container">
-			<div class="row">
+            <ul class="nav nav-tabs" role="tablist" id="myTab">
+              <li role="presentation" class="active"><a href="#panel1" aria-controls="home" role="tab" data-toggle="tab">Study Overview</a></li>
+              <li role="presentation"><a href="#panel2" aria-controls="profile" role="tab" data-toggle="tab">Mobile App Overview</a></li>
+              <!--<li role="presentation"><a href="#panel3" aria-controls="messages" role="tab" data-toggle="tab">Mobile App Interface</a></li>-->
+            </ul>
 
-				<div *ngFor="let newsObj of newsObjs; let first = first; let last = last; let i = index" class="media">
-					<a class="pull-left" href="#">
-						<img class="media-object" data-src="holder.js/100x100" style="width: 100px;" src="./assets/logos/{{newsObj.logo}}" alt="">
-					</a>
-					<div class="media-body">
-						<h4 class="media-heading">{{newsObj.heading}}</h4>
-						{{newsObj.text}}
-						<br/>
-						<a href="{{newsObj.link}}" target="_blank">Read more...</a>
-					</div>
-				</div>
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="panel1">
+                    <h4>What is the purpose of collecting travel information</h4>
+                    <p class="para">The Vermont Agency of Transportation (VTrans) will collect travel information and pavement conditions from Vermont drivers to understand current pavement conditions from the eyes of Vermonters themselves to plan future road improvement needs. VTrans has a procedure to track how the roads in Vermont deteriorate over time, but they’d like to make sure their judgements on road conditions align with how people who drive on the roads view pavement conditions. Your participation helps provide an accurate, representative picture of road conditions in your region. Your information will only be used to project future road improvements and will be securely maintained by the agency collecting it. Your information will not be resold or used for any other purpose.</p>
 
-				<div class="media">
-					<div class="media-body">
-						<h4 class="media-heading">Media inquiries?</h4>
-						<a href="/contact" target="_blank">Contact Us</a>
-					</div>
-				</div>
+                    <h4>What specific information will you be collecting, and how will that information be collected and used?</h4>
+                    <p class="para">If you are a participant in a study, you will receive an invitation to download rPlace, which will automatically collect information (via the sensors in your smartphone) about where you traveled during the study period. The application will use the travel information to check to see if you drove on any roads on which VTrans is interested in learning more about the pavement condition. If so, you will be prompted with a survey when is sense you have stopped moving. rPlace will also prompt you to enter additional information about your trip via a series of easy-to-answer questions presented via on-screen menu.</p>
 
-				<div class="col-sm-12">
-					<a href="#top"><span class="glyphicon glyphicon-circle-arrow-up"></span>&nbsp;&nbsp;Back to the Top</a>
-				</div>
+                    <h4>How do I download rPlace and participate in an eligible study?</h4>
+                    <p class="para">You must receive an invitation in order to use rPlace and participate in an eligible study. If you are invited to a study, you will receive the login information necessary to begin using rPlace on your smartphone in person by designated individuals.</p>
 
-			</div><!-- /.row -->
+                    <h4>How long should I participate?</h4>
+                    <p class="para">If you are participating in a study, you will receive information about the travel dates over which you should participate. We ask that you download the smartphone app before your travel dates begin. The app will automatically begin collecting trip data when your assigned travel period begins, and will automatically stop collecting data after the travel dates have ended.</p>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="panel2">
+                    <!-- New section -->
+                    <h4>Why should I download rPlace and participate in an eligible study?</h4>
+                    <p class="para">Your participation helps provide an accurate picture of road conditions in your region, which benefits the traveling public as a whole (including you!). Invited participants are also eligible to receive an incentive payment, which is predetermined by the participating study agency/agencies. Additional information about incentive payments will accompany invitations.</p>
 
-		</div><!-- /.container -->
+                    <!-- New section -->
+                    <h4>What is required to use rPlace on my device and participate in an eligible study?</h4>
+                    <p>In order to use rPlace and participate in an eligible study, you must:</p>
+                    <ul class="para">
+                        <li>Be 13 years of age or older; and</li>
+                        <li>Own a smartphone (running iOS or Android); or</li>
+                    </ul>
+
+                    <!-- New section -->
+                    <h4>What data does rPlace collect from me?</h4>
+                    <p class="para">rPlace automatically and securely collects information about location, speed, and time. This information is collected whenever you are moving. rPlace will also ask you questions about your travel via on-screen prompts, record your responses, and securely transfer the data to our servers.</p>
+                    <h4>How does rPlace protect the privacy of my data?</h4>
+                    <p class="para">rPlace prioritizes protection of participants’ privacy. All data sent and received are encrypted to protect your privacy. Your data will only be used by participating agencies for the purposes of the study that you were invited to participate in. Your data will not be resold or used for any other purpose.</p>
+
+                    <!-- New section -->
+                    <h4>What is the process for installing rPlace on my iOS or Android device?</h4>
+                    <ol class="para">
+                        <li>You will have received an authentication code to access rPlace.</li>
+                        <li>Download rPlace and use the authentication code you were supplied to begin participating in the study.</li>
+                        <li>Once you have downloaded rPlace and entered your code, make sure to enable any required settings (e.g., location services) to allow rPlace to use your phone’s sensors.</li>
+                        <li>Once you open rPlace, keep it running in the background. (Closing the app or turning off your phone will stop the app from running and rPlace will no longer be able to collect data.)</li>
+                        <li>Answer required questions when the app prompts you to enter additional information about a trip (e.g., What type of vehicle were you driving, and what was the purpose of your trip?).</li>
+                    </ol>
+
+                    <!-- New section -->
+                    <h4>What built-in sensors does rPlace use when collecting data?</h4>
+                    <p class="para">During your participation in the study, rPlace will use your phone’s location services (e.g., GPS and compass) and accelerometer to collect information about your travel behavior. rPlace will operate unobtrusively in the background and provide you with notifications only when additional information is required.</p>
+
+                    <!-- New section -->
+
+                    <h4>How will using rPlace affect my smartphone’s battery life?</h4>
+                    <p class="para">rPlace is optimtized to minimally impact your phone’s battery life and operation, however, continued use of GPS running in the background can dramatically decrease battery life. For longer trips, we recommend carrying a portable charger to ensure continued operation of your smartphone regardless of usage.</p>
+
+                    <!-- New section -->
+                    <h4>How will using rPlace affect my data plan?</h4>
+                    <p class="para">rPlace is designed to minimize data use when sending and receiving travel behavior information collected on your device during the study period. If both WiFi and a cellular network signals are available, rPlace first uses WiFi to send and receive data. If no WiFi network is available, then rPlace sends and receives data using your mobile data plan whenever a cellular signal is available.</p>
+
+                    <!-- New section -->
+                    <h4>What do I do with rPlace when the study period is over?</h4>
+                    <p class="para">rPlace will only collect travel behavior information during the study period. As a result, rPlace will no longer require any input from you after the study has ended. In most instances, we recommend that you simply delete rPlace from your smartphone once the study period ends and you have answered all the surveys in the app. Please ensure you have connected to either a cellular network or WiFi between answering your surveys and uninstalling the app, so that all of your survey answers can be sent and you can be marked as complete! Deleting the application also deletes any data associated with rPlace.</p>
+
+                    <!-- New section -->
+                    <h4>Who should I contact with questions about rPlace? What if I think that rPlace is not working properly?</h4>
+                    <p class="para">If you have any questions about rPlace, please contact <a href="mailto:rplace-support@rsginc.com">rplace-support@rsginc.com</a>. We will respond to your inquiry during standard business hours (9:00 a.m.–5:00 p.m. ET on weekdays). If you are experiencing difficulties using rPlace, or if you think that the app might not be functioning properly, please contact the support email or use the feedback feature in the app and detail the issue or problem you are experiencing while using rPlace.</p>
+
+                    <!-- New section -->
+                    <h4>What if I know in advance that I will be traveling through or to a location without cellular service or WiFi?</h4>
+                    <p class="para">rPlace is designed to record data to your phone and send it to our servers only when there is cellular service or WiFi available. If you are traveling to an area with no WiFi or cellular network, please ensure that you connect to WiFi or cellular network before uninstalling the app.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

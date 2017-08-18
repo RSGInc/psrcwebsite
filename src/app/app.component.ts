@@ -6,8 +6,8 @@ import { Component } from '@angular/core';
   selector: 'my-app',
   template: `
     <navbar></navbar>
- <router-outlet></router-outlet>
- <footer></footer>
+    <router-outlet></router-outlet>
+    <footer></footer>
 `,
 
 })
@@ -16,6 +16,6 @@ export class AppComponent {
   private projectName: string;
 
   constructor() {
-    this.projectName = 'Puget Sound Regional Travel Study';
+    this.projectName = 'rPlace';
   }
 }

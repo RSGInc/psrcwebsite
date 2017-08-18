@@ -1,209 +1,459 @@
-/* You can add global styles to this file, and also import other style files */
 
-/*Color Palette*/
-/*.orange{color:#f78d35;}*/
-.orange{color:#FF7F00;}
-.blue{color:#3c9fDB;}
-.dk_grey{color:#5a5a5c}
-.md_grey{color:#706f73;}
+/* general styles */
+body { padding-top: 50px; }
+p { font-size: 16px; }
+ul, ol { padding-left: 30px;}
+.well {padding: 4px 10px;}
 
-body{font-family: 'Open Sans', sans-serif;font-weight:normal;color:#5a5a5c;font-size:1.5rem;}
-
-h1, h2, h3, h4, h5, h6 {font-family: 'Open Sans',sans-serif;font-weight:600;}
-
-.blockquote-reverse p {
-	font-size: 14px;
+/* navbar */
+.navbar { padding: 0 48px; border: none;}
+a.navbar-brand { padding: 0; }
+.header-icon {
+    height: 50px;
+    border: 1px solid #333;
+    border-radius: 15px;
 }
 
-.blockquote-reverse cite {
-	font-size: 12px;
-}
-
-#banner {
-  height: 350px;
-  width: 100%;
-  background-size: 100% 100%;
-}
-
-.content-wrapper {
-	padding-top: 25px;
-	padding-left: 10px;
-	background-color: white;
-}
-
-.jumbotron-first {
-	margin-bottom:0px;
-	background-color: white;
-	color: black;
-	padding-top: 0px;
-	padding-bottom: 10px;
-	/*placeholder space*/
-	height:400px;
-	width:1000px;
-}
-
-.jumbotron-heading {background-color: white;color: #5a5a5c;/*margin-top:50px;*/} /*got rid of orange*/
-
-.jumbotron h1 {font-size:4rem;font-weight:400;}
-
-.jumbotron-first h1 {font-size:5rem;}
-
-.jumbotron { padding-bottom: 0px; }
-
-.social img {padding: 2px;}
-
-/*faqs page*/
-.faq h3 {
-	margin-top: 40px;
-	margin-bottom: 10px;
-	font-size:2.2rem;
-	font-weight:300;
-}
-
-.btn-default:hover {
-	color: #FF7F00;
-	background-color: white;
-	border-color: #FF7F00;
-}
-
-.btn-default {
-	color: white;
-	background-color: #FF7F00;
-	border-color: #FF7F00;
-}
-
-.btn-xl {
-	padding: 15px 22px;
-	font-size: 24px;
-	line-height: 1.33;
-	border-radius: 6px
-}
-
-.glyphicon {
-margin-top: 20px;
-margin-bottom: 30px;
-margin-left: 20px;
-font-size: 24px;
-}
-
-
-/* CUSTOMIZE THE NAVBAR
--------------------------------------------------- */
-
-.navbar {margin-bottom:0px;background-color:white;}
-
-.navbar-nav>li>a {background-color:white;}
-
-.navbar .navbar-toggle {border-color: #5a5a5c;}
-
-.navbar .navbar-toggle .icon-bar {background-color: #5a5a5c;}
-
-.navbar-nav a {
-	font-family: 'Open Sans', sans-serif;
-	font-weight:400;
-	text-transform:uppercase;
-	color:#5a5a5c;
-	font-size:1.7rem;
-}
-
-.navbar-brand {height:auto;}
-
-
-/* CUSTOMIZE THE THUMBNAILS
--------------------------------------------------- */
-.thumbnails .col-lg-4 {
-  text-align: center;
-  margin-bottom: 20px;
-	margin-top: 20px;
-}
-.thumbnails h2 {
-  font-weight: normal;
-}
-.thumbnails .col-lg-4 p {
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-/* CUSTOMIZE THE FOOTER
--------------------------------------------------- */
-
+/* footer */
 footer {
-	background-color:#DBDBDB;
-	margin-top: 20px;
-	padding-top: 20px;
+    background-color: white;
+    position: relative;
+    padding-top: 96px;
 }
 
-footer .nav-stacked>li {
-	font-family: 'Open Sans', sans-serif;
-	font-weight:600;
-	text-transform:uppercase;
-	font-size:1.3rem;
+/* text colors */
+.text-black {color: #000;}
+.text-muted {color: #666;}
+.text-light {color: #ccc;}
+.text-warning {color: #e15f37;}
+.text-rmove {color: #e15f37;}
+
+/* colors */
+.charcoal {background: #333;}
+
+
+/* index page */
+#section1 {
+    /*background: url(../img/pedestrians_tran.jpeg) 50% 0 fixed;*/
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    padding: 24px 0 48px;
+}
+#section2 {
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    padding: 36px 0;
+}
+#section3 {
+    padding: 24px 0 0 0;
+    background-color: white;
+    position: relative;
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
 }
 
-footer .nav-stacked>li a{color:#5a5a5c;}
-
-footer .copyright {font-size: 1rem;font-weight:400;padding-left:15px;}
-
-/* RESPONSIVE CSS
--------------------------------------------------- */
-
-@media (min-width: 768px) {
-
-	.navbar-nav a {margin-top:35px;}
-
-	/* Make header bigger to fit project logo */
-	.header-wrapper {height: auto;}
-
-	.jumbotron-first h1 {font-size:7rem;}
-
-	/*.jumbotron-sub-home {margin-top: 100px;margin-bottom: 30px;}*/
-
-	/* Remove the edge padding needed for mobile, add bottom whitespace */
-  .thumbnails {
-		/*margin-bottom: 100px;*/
-		margin-top: 30px;
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-	/* Float footer navs left */
-	footer .nav-stacked>li {float: left;}
-
-	/* Make the footer a little bigger */
-	footer {
-		margin-top: 100px;
-		padding-bottom: 300px;
-	}
-
+/* default (phone) styles */
+#phone_img {
+    width: 200px;
+}
+#logo_panel {
+    text-align: center;
+    padding: 32px 24px 0 24px;
+}
+#logo_img {
+    width: 80%;
+    max-width: 300px;
+}
+#tagline {
+    font-size: 24px;
+}
+.storeIcons {
+    padding-top: 14px;
+    text-align: center;
 }
 
-/* START PAGE
--------------------------------------------------- */
+.storeIcons a {
+    display: inline-block;
+    padding: 8px;
+}
+.thumbnail {border: 0;}
+.featurette-divider { margin: 80px 0;}
+.tab-content {margin-top: 16px;}
+.para { margin-bottom: 32px;}
 
-#login {
-	color: white;
-	top:410px;
-	left:600px;
-	position:absolute;
+#terms { display: none; }
+
+/* ============================================================================================================================
+== BLOCKQUOTE WITH RIGHT-ANGLED TRIANGLE
+** ============================================================================================================================ */
+
+.example-right {
+  position:relative;
+  padding:15px 30px;
+  margin:0;
+  color:#fff;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  border-radius:10px;
+  max-width: 360px;
+  min-width: 280px;
+  display: inline-block;
 }
 
-/*CAROUSEL*/
-#carousel-1 img {
-	width:100%;
-}
-.carousel-inner	{
-	margin:0 auto;
-	width:68%;
-}
-#carousel-1 {
-	padding:12px 0;
-	margin-bottom:0;
+/* display of quote author (alternatively use a class on the element following the blockquote) */
+/*
+.example-right.left {text-align: left;}
+.example-right.right {text-align: right;}
+
+.example-right.left + p {margin:15px 0 2em 85px; font-style:italic; }
+.example-right.right + p {margin:15px 85px 2em 0; font-style:italic; }
+
+*/
+
+.quote:nth-child(odd) blockquote {text-align: left;}
+.quote:nth-child(even) blockquote {text-align: right;}
+
+
+.quote:nth-child(odd) p.quoter {margin-top: 15px; margin-left: 135px; margin-bottom: 2em; font-style:italic; }
+.quote:nth-child(even) p.quoter {margin-top: 15px; margin-right: 135px; margin-bottom: 2em; font-style:italic; }
+
+
+/* creates part of the curve */
+.quote:nth-child(odd) blockquote:before {
+  content:"";
+  position:absolute;
+  z-index:-1;
+  bottom:-30px;
+  right:80%;
+  height:30px;
+
+  -webkit-border-bottom-right-radius:80px 50px;
+  -moz-border-radius-bottomright:80px 50px;
+  border-bottom-right-radius:80px 50px;
+  -webkit-transform:translate(0, -2px);
+  -moz-transform:translate(0, -2px);
+  -ms-transform:translate(0, -2px);
+  -o-transform:translate(0, -2px);
+  transform:translate(0, -2px);
 }
 
-blockquote.blockquote-reverse {
-	height: 130px;
+.quote:nth-child(odd) blockquote:after {
+  content:"";
+  position:absolute;
+  z-index:-1;
+  bottom:-30px;
+  right:80%;
+  width:60px;
+  height:30px;
+  background:#fff;
+  /* css3 */
+  -webkit-border-bottom-right-radius:40px 50px;
+  -moz-border-radius-bottomright:40px 50px;
+  border-bottom-right-radius:40px 50px;
+  /* using translate to avoid undesired appearance in CSS2.1-capabable but CSS3-incapable browsers */
+  -webkit-transform:translate(-30px, -2px);
+  -moz-transform:translate(-30px, -2px);
+  -ms-transform:translate(-30px, -2px);
+  -o-transform:translate(-30px, -2px);
+  transform:translate(-30px, -2px);
+}
+/* creates part of the curve */
+.quote:nth-child(even) blockquote:before {
+  content:"";
+  position:absolute;
+  z-index:-1;
+  bottom:-30px;
+  right:0%;
+  height:30px;
+
+  /* css3 */
+  -webkit-border-bottom-left-radius:80px 50px;
+  -moz-border-radius-bottomleft:80px 50px;
+  border-bottom-left-radius:80px 50px;
+  /* using translate to avoid undesired appearance in CSS2.1-capabable but CSS3-incapable browsers */
+
+  -webkit-transform:translate(0, -2px);
+  -moz-transform:translate(0, -2px);
+  -ms-transform:translate(0, -2px);
+  -o-transform:translate(0, -2px);
+  transform:translate(0, -2px);
 }
 
-.project-text {
-	font-size: 1.5em;
+/* creates part of the curved pointy bit */
+.quote:nth-child(even) blockquote:after {
+  content:"";
+  position:absolute;
+  z-index:-1;
+  bottom:-30px;
+  right:0%;
+  width:60px;
+  height:30px;
+  background:#fff;
+  /* css3 */
+  -webkit-border-bottom-left-radius:40px 50px;
+  -moz-border-radius-bottomleft:40px 50px;
+  border-bottom-left-radius:40px 50px;
+  /* using translate to avoid undesired appearance in CSS2.1-capabable but CSS3-incapable browsers */
+  -webkit-transform:translate(30px, -2px);
+  -moz-transform:translate(-30px, -2px);
+  -ms-transform:translate(-30px, -2px);
+  -o-transform:translate(-30px, -2px);
+  transform:translate(30px, -2px);
+}
+
+
+
+/*========== ORANGE ==========*/
+.quote:nth-child(odd) blockquote {
+    background:#FF6933; /* default background for browsers without gradient support */
+    /* css3 */
+    background:-webkit-gradient(linear, 0 0, 0 100%, from(#FF7943), to(#E24B15));
+    background:-moz-linear-gradient(#FF7943, #E24B15);
+    background:-o-linear-gradient(#FF7943, #E24B15);
+    background:linear-gradient(#FF7943, #E24B15);
+}
+.quote:nth-child(odd) blockquote:before {
+    border-right:60px solid #E24B15;
+    background:#E24B15; /* need this for webkit - bug in handling of border-radius */
+}
+/*========== GREY ==========*/
+.quote:nth-child(even) blockquote {
+    background:#333; /* default background for browsers without gradient support */
+    /* css3 */
+    background:-webkit-gradient(linear, 0 0, 0 100%, from(#777), to(#333));
+    background:-moz-linear-gradient(#777, #333);
+    background:-o-linear-gradient(#777, #333);
+    background:linear-gradient(#777, #333);
+}
+.quote:nth-child(even) blockquote:before {
+    border-left:60px solid #333;
+    background:#333; /* need this for webkit - bug in handling of border-radius */
+}
+/*========== GREEN ==========*/
+.example-right.green {
+    background:#5a8f00; /* default background for browsers without gradient support */
+    /* css3 */
+    background:-webkit-gradient(linear, 0 0, 0 100%, from(#b8db29), to(#5a8f00));
+    background:-moz-linear-gradient(#b8db29, #5a8f00);
+    background:-o-linear-gradient(#b8db29, #5a8f00);
+    background:linear-gradient(#b8db29, #5a8f00);
+}
+.example-right.green:before {
+    border-right:60px solid #5a8f00;
+    background:#5a8f00; /* need this for webkit - bug in handling of border-radius */
+}
+/*========== BLUE ==========*/
+.example-right.blue {
+  background:#075698;*/
+  /* css3 */
+  background:-webkit-gradient(linear, 0 0, 0 100%, from(#2e88c4), to(#075698));
+  background:-moz-linear-gradient(#2e88c4, #075698);
+  background:-o-linear-gradient(#2e88c4, #075698);
+  background:linear-gradient(#2e88c4, #075698);
+}
+.example-right.blue:before {
+    border-right:60px solid #075698;
+    background:#075698; /* need this for webkit - bug in handling of border-radius */
+}
+
+/* ============================================================================================================================
+== MEDIA QUERIES
+** ============================================================================================================================ */
+/* small screen */
+@media (min-width: 768px ) {
+	#section1 {
+        padding: 50px 0 100px 0;
+    }
+    #section2 {
+        padding: 72px 0;
+    }
+	#phone_img {
+        width: 80%;
+        max-width: 240px;
+    }
+	#logo_panel {
+        text-align: left;
+        padding-top: 60px;
+    }
+	#logo_panel>div>h3, #logo_panel>div>a>h3 {
+        font-size: 20px;
+    }
+	#logo_img {
+        width: 120%;
+    }
+  .quote:nth-child(odd) blockquote { margin-right: 160px;}
+  .quote:nth-child(even) blockquote { margin-left: 160px;}
+  .quote:nth-child(odd) p.quoter { margin-right: 245px;}
+  .quote:nth-child(even) p.quoter { margin-left: 245px;}
+}
+
+/* medium screen */
+@media (min-width: 992px) {
+    .storeIcons {
+        text-align: left;
+    }
+	#logo_panel>div>h3, #logo_panel>div>a>h3 {
+        font-size: 22px;
+    }
+	#logo_img {
+        max-width: 340px;
+    }
+	#thumbnail1 {padding: 0 32px 0 0;}
+	#thumbnail2 {padding: 0 16px;}
+	#thumbnail3 {padding: 0 0 0 32px;}
+  .quote:nth-child(odd) blockquote { margin-right: 240px;}
+  .quote:nth-child(even) blockquote { margin-left: 240px;}
+  .quote:nth-child(odd) p.quoter { margin-right: 325px;}
+  .quote:nth-child(even) p.quoter { margin-left: 325px;}
+}
+
+/* large screen */
+@media (min-width: 1200px) {
+	#logo_img {
+        width: 120%;
+        max-width: 340px;
+    }
+}
+
+
+
+/* don't run slideshow on phone */
+.cb-slideshow {display: none}
+
+
+@media (min-width: 768px ) {
+    .cb-slideshow {
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        z-index: 0;
+        list-style: none;
+    }
+
+    .cb-slideshow li span {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        color: transparent;
+        background-size: cover;
+        background-position: 50% 50%;
+        background-repeat: none;
+        opacity: 0;
+        z-index: 0;
+        -webkit-backface-visibility: hidden;
+        -webkit-animation: imageAnimation 36s linear infinite 0s;
+        -moz-animation: imageAnimation 36s linear infinite 0s;
+        -o-animation: imageAnimation 36s linear infinite 0s;
+        -ms-animation: imageAnimation 36s linear infinite 0s;
+        animation: imageAnimation 36s linear infinite 0s;
+    }
+
+    .cb-slideshow li:nth-child(1) span {
+        background-image: url(./assets/slides/pedestrians_tran.png)
+    }
+    .cb-slideshow li:nth-child(2) span {
+        background-image: url(./assets/slides/el_train.png);
+        -webkit-animation-delay: 6s;
+        -moz-animation-delay: 6s;
+        -o-animation-delay: 6s;
+        -ms-animation-delay: 6s;
+        animation-delay: 6s;
+    }
+    .cb-slideshow li:nth-child(3) span {
+        background-image: url(./assets/slides/auto.png);
+        -webkit-animation-delay: 12s;
+        -moz-animation-delay: 12s;
+        -o-animation-delay: 12s;
+        -ms-animation-delay: 12s;
+        animation-delay: 12s;
+    }
+    .cb-slideshow li:nth-child(4) span {
+        background-image: url(./assets/slides/pedestrians_tran.png);
+        -webkit-animation-delay: 18s;
+        -moz-animation-delay: 18s;
+        -o-animation-delay: 18s;
+        -ms-animation-delay: 18s;
+        animation-delay: 18s;
+    }
+    .cb-slideshow li:nth-child(5) span {
+        background-image: url(./assets/slides/el_train.png);
+        -webkit-animation-delay: 24s;
+        -moz-animation-delay: 24s;
+        -o-animation-delay: 24s;
+        -ms-animation-delay: 24s;
+        animation-delay: 24s;
+    }
+    .cb-slideshow li:nth-child(6) span {
+        background-image: url(./assets/slides/auto.png);
+        -webkit-animation-delay: 30s;
+        -moz-animation-delay: 30s;
+        -o-animation-delay: 30s;
+        -ms-animation-delay: 30s;
+        animation-delay: 30s;
+    }
+    /* Animation for the slideshow images */
+    @-webkit-keyframes imageAnimation {
+        0% { opacity: 0;
+        -webkit-animation-timing-function: ease-in; }
+        8% { opacity: 1;
+             -webkit-animation-timing-function: ease-out; }
+        17% { opacity: 1 }
+        25% { opacity: 0 }
+        100% { opacity: 0 }
+    }
+    @-moz-keyframes imageAnimation {
+        0% { opacity: 0;
+        -moz-animation-timing-function: ease-in; }
+        8% { opacity: 1;
+             -moz-animation-timing-function: ease-out; }
+        17% { opacity: 1 }
+        25% { opacity: 0 }
+        100% { opacity: 0 }
+    }
+    @-o-keyframes imageAnimation {
+        0% { opacity: 0;
+        -o-animation-timing-function: ease-in; }
+        8% { opacity: 1;
+             -o-animation-timing-function: ease-out; }
+        17% { opacity: 1 }
+        25% { opacity: 0 }
+        100% { opacity: 0 }
+    }
+    @-ms-keyframes imageAnimation {
+        0% { opacity: 0;
+        -ms-animation-timing-function: ease-in; }
+        8% { opacity: 1;
+             -ms-animation-timing-function: ease-out; }
+        17% { opacity: 1 }
+        25% { opacity: 0 }
+        100% { opacity: 0 }
+    }
+    @keyframes imageAnimation {
+        0% { opacity: 0;
+        animation-timing-function: ease-in; }
+        8% { opacity: 1;
+             animation-timing-function: ease-out; }
+        17% { opacity: 1 }
+        25% { opacity: 0 }
+        100% { opacity: 0 }
+    }
+
+    /* Show at least something when animations not supported */
+    .no-cssanimations .cb-slideshow li span{
+        opacity: 1;
+    }
+}
+
+#viewTerms:hover{
+    cursor: pointer;
 }
