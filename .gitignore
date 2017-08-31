@@ -2,3 +2,4 @@ node_modules/.bin/tsc
 node_modules
 .idea/
 .DS_Store
+STAR_rsginc_com.pfx
